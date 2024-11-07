@@ -7,3 +7,14 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
+# db/seeds.rb
+
+# Llena la base de datos con datos
+events = [nil
+
+  ]
+#agrega datos y no borra los anteriores, y si ya existe el dato, no lo agrega tampoco
+  events.each do |evento|
+    Event.find_or_create_by(evento)
+  end

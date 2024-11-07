@@ -1,0 +1,35 @@
+<h1>Eventos históricos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Año secular</th>
+      <th>Año judío</th>
+      <th>Evento en la historia</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="3"><h2>La Creación</h2></td>
+    </tr>
+    <% @events.select { |e| e.jewish_year < 1949 }.each do |event| %>
+      <tr>
+        <td><%= event.secular_year %></td>
+        <td><%= event.jewish_year %></td>
+        <td><%= event.description %></td>
+      </tr>
+    <% end %>
+  </tbody>
+  <tbody>
+    <tr>
+      <td colspan="3"><h2>Los Patriarcas</h2></td>
+    </tr>
+    <% @events.select { |e| e.jewish_year >= 1949 }.each do |event| %>
+      <tr>
+        <td><%= event.secular_year %></td>
+        <td><%= event.jewish_year %></td>
+        <td><%= event.description %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

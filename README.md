@@ -1,24 +1,22 @@
-# README
+# Eventos Históricos
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Descripción
 
-Things you may want to cover:
+Esta aplicación muestra una lista de eventos históricos importantes en la historia judía, desde la creación del mundo hasta la época de los patriarcas.
 
-* Ruby version
+## Características
 
-* System dependencies
+* Lista de eventos históricos con año secular y judío
+* Descripción detallada de cada evento
+* Categorización de eventos en "La Creación" y "Los Patriarcas"
 
-* Configuration
+## Tecnologías utilizadas
 
-* Database creation
+* Ruby on Rails
+* Base de datos sqlite3
+* HTML/CSS/JavaScript
 
-* Database initialization
+## Agradecimientos
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* [Tu nombre] por crear esta aplicación
+* [Nombres de colaboradores] por su contribución
